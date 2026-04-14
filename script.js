@@ -14,7 +14,7 @@ function type() {
   if (i < text.length) {
     document.getElementById("typing").innerHTML += text.charAt(i);
     i++;
-    setTimeout(type, 80);
+    setTimeout(type, 70);
   }
 }
 
