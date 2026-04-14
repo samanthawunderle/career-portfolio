@@ -1,142 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Samantha Wunderle | Cyber Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Samantha Wunderle | Cybersecurity Portfolio</title>
+
+  <link rel="stylesheet" href="style.css"/>
 </head>
 
 <body>
 
-<div class="bg-animation"></div>
+<!-- BACKGROUND EFFECT -->
+<div class="bg"></div>
+<div class="glow"></div>
 
-<!-- NAV -->
+<!-- NAV TABS -->
 <header>
-  <div class="logo">SW</div>
+  <div class="logo">CYBER PORTFOLIO</div>
+
   <nav>
-    <button onclick="showTab('about', event)">About</button>
-<button onclick="showTab('resume', event)">Resume</button>
-<button onclick="showTab('skills', event)">Skills</button>
-<button onclick="showTab('projects', event)">Projects</button>
-<button onclick="showTab('contact', event)">Contact</button>
+    <button onclick="showTab('home')">Home</button>
+    <button onclick="showTab('about')">About</button>
+    <button onclick="showTab('resume')">Resume</button>
+    <button onclick="showTab('skills')">Skills</button>
+    <button onclick="showTab('projects')">Projects</button>
+    <button onclick="showTab('contact')">Contact</button>
   </nav>
 </header>
 
-<!-- HERO -->
-<section class="hero">
-  <h1 id="typing"></h1>
-  <p>Cybersecurity • Networking • Digital Forensics • IT Systems</p>
+<!-- HOME -->
+<section id="home" class="tab active">
 
-  <a class="resume-btn" href="resume.pdf" download>Download Resume</a>
+  <div class="hero">
+
+    <div class="hero-text">
+      <h1><span id="typing"></span></h1>
+
+      <p>
+        Cybersecurity • Networking • IT Systems • Digital Defense
+      </p>
+
+      <a class="btn" href="images/resume.pdf" download>
+        Download Resume
+      </a>
+    </div>
+
+    <!-- blended images -->
+    <div class="hero-images">
+      <img src="images/me-photo.jpg" class="img1"/>
+      <img src="images/me-photo2.jpg" class="img2"/>
+    </div>
+
+  </div>
+
 </section>
 
-<!-- TABS -->
-<main>
-
 <!-- ABOUT -->
-<section id="about" class="tab active">
+<section id="about" class="tab">
+
   <h2>About Me</h2>
+
   <p>
-    I’m Samantha Wunderle, an 18-year-old cybersecurity student passionate about networking, system defense,
-    and digital forensics. I enjoy solving technical problems, working under pressure, and improving systems.
+    Hi, I’m Samantha Wunderle — an 18-year-old cybersecurity student passionate about
+    networking, digital systems, and cyber defense.
   </p>
 
   <p>
-    Outside of tech, I enjoy painting, being outdoors, and I previously played ice hockey which taught me discipline,
-    teamwork, and resilience.
+    I’m highly outgoing, easy to communicate with, and naturally take initiative when problems arise.
+    I enjoy fast-paced environments where problem-solving matters.
   </p>
 
   <p>
-    I am outgoing, easy to communicate with, and I naturally take initiative when problems arise.
+    Outside of IT, I enjoy painting, ice hockey, and learning how systems connect across the digital world.
   </p>
+
 </section>
 
 <!-- RESUME -->
 <section id="resume" class="tab">
+
   <h2>Resume</h2>
 
-  <h3>Education</h3>
-  <p>Francis Howell High School — Graduated May 2025</p>
-  <p>UAT — B.S. Network Security (Current)</p>
-  <p>Lindenwood University — B.S. Cybersecurity (Starting Fall 2026)</p>
+  <div class="card">
+    <h3>Education</h3>
+    <p>Francis Howell High School — Graduated May 2025</p>
+    <p>UAT — B.S. Network Security (2026 - Present)</p>
+    <p>Lindenwood University — B.S. Cybersecurity (Starting Fall 2026)</p>
+  </div>
 
-  <h3>Work Experience</h3>
-  <p><b>PhasedLogix IT Services (2025–2026)</b></p>
-  <p>Managed IT systems, Active Directory, Microsoft 365, Google Workspace, VPNs, and ticketing systems (Syncro).</p>
+  <div class="card">
+    <h3>Experience</h3>
+    <p><b>PhasedLogix IT Services</b> (2025–2026)</p>
+    <p>IT support, Active Directory, Microsoft 365, Google Workspace, ticketing systems (Syncro), and system troubleshooting.</p>
 
-  <p><b>Delmar Gardens (2023–2024)</b></p>
-  <p>Customer support, teamwork, communication, and fast-paced service environment.</p>
+    <p><b>Delmar Gardens</b> (2023–2024)</p>
+    <p>Customer service, communication under pressure, teamwork, and operational support.</p>
+  </div>
 
-  <h3>Career Goal</h3>
-  <p>Incident Response • Digital Forensics • Security Architecture</p>
 </section>
 
 <!-- SKILLS -->
 <section id="skills" class="tab">
-  <h2>Skills</h2>
 
-  <h3>Technical Skills</h3>
-  <ul>
-    <li>Active Directory Administration</li>
-    <li>Microsoft 365 / Google Workspace</li>
-    <li>Networking (Routers, VLANs, IP Configurations)</li>
-    <li>Ticketing Systems (Syncro)</li>
-    <li>Cisco Packet Tracer</li>
-    <li>System Troubleshooting</li>
-  </ul>
+  <h2>Technical + Soft Skills</h2>
 
-  <h3>Soft Skills</h3>
-  <ul>
-    <li>Communication & Storytelling</li>
-    <li>Teamwork & Leadership</li>
-    <li>Problem-Solving & Critical Thinking</li>
-    <li>Adaptability</li>
-    <li>Time Management</li>
-    <li>Emotional Intelligence</li>
-    <li>Work Ethic & Initiative</li>
-  </ul>
+  <div class="grid">
+
+    <div class="card">
+      <h3>Technical Skills</h3>
+      <ul>
+        <li>Active Directory & Domain Management</li>
+        <li>Microsoft 365 Administration</li>
+        <li>Google Workspace</li>
+        <li>Networking & Routing Basics</li>
+        <li>Cisco Packet Tracer</li>
+        <li>System Imaging & Deployment</li>
+        <li>Ticketing Systems (Syncro)</li>
+        <li>IT Troubleshooting (PCs, laptops, servers)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Soft Skills</h3>
+      <ul>
+        <li>Communication & Collaboration</li>
+        <li>Leadership & Initiative</li>
+        <li>Problem Solving & Critical Thinking</li>
+        <li>Adaptability & Pressure Handling</li>
+        <li>Time Management</li>
+        <li>Emotional Intelligence</li>
+        <li>Creativity & Innovation</li>
+        <li>Work Ethic & Reliability</li>
+      </ul>
+    </div>
+
+  </div>
+
 </section>
 
 <!-- PROJECTS -->
 <section id="projects" class="tab">
+
   <h2>Projects</h2>
 
   <div class="card">
-    <h3>Cell Tower Networking Simulation</h3>
-    <p>Built a simulated cellular network using routers, servers, and smartphones in Cisco Packet Tracer.</p>
+    <h3>Cell Tower Network Simulation</h3>
+    <p>
+      Built a simulated cellular network using routers, servers, and mobile devices.
+      Focused on IP configuration, routing logic, and connectivity troubleshooting.
+    </p>
+    <img src="images/packet1.png"/>
   </div>
 
   <div class="card">
-    <h3>VLAN Segmentation Project</h3>
-    <p>Configured VLANs, trunk ports, and router subinterfaces to separate and secure business networks.</p>
+    <h3>VLAN Segmentation Lab</h3>
+    <p>
+      Designed a segmented business network using VLANs and trunking to isolate departments and enable controlled inter-VLAN routing.
+    </p>
+    <img src="images/packet2.png"/>
   </div>
 
-  <div class="card">
-    <h3>IT Support Lab Work</h3>
-    <p>Hands-on troubleshooting with Active Directory, VPNs, and enterprise IT systems.</p>
-  </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact" class="tab">
+
   <h2>Contact</h2>
-  <p>Email: your.email@example.com</p>
+
+  <p>Email: samantha@example.com</p>
+
 </section>
-
-<!-- IMAGES (BOTTOM SECTION LIKE YOU WANTED) -->
-<section class="gallery">
-  <h2>Portfolio Visuals</h2>
-
-  <div class="gallery-grid">
-    <img src="images/me-photo.jpg" alt="Me 1">
-    <img src="images/me-photo2.jpg" alt="Me 2">
-    <img src="images/packet1.png" alt="Project 1">
-    <img src="images/packet2.png" alt="Project 2">
-  </div>
-</section>
-
-</main>
 
 <script src="script.js"></script>
 </body>
