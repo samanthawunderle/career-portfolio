@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samantha Wunderle | Cyber Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="bg-animation"></div>
+
+<!-- NAV -->
+<header>
+  <div class="logo">SW</div>
+  <nav>
+    <button onclick="showTab('about')">About</button>
+    <button onclick="showTab('resume')">Resume</button>
+    <button onclick="showTab('skills')">Skills</button>
+    <button onclick="showTab('projects')">Projects</button>
+    <button onclick="showTab('contact')">Contact</button>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h1 id="typing"></h1>
+  <p>Cybersecurity • Networking • Digital Forensics • IT Systems</p>
+
+  <a class="resume-btn" href="resume.pdf" download>Download Resume</a>
+</section>
+
+<!-- TABS -->
+<main>
+
+<!-- ABOUT -->
+<section id="about" class="tab active">
+  <h2>About Me</h2>
+  <p>
+    I’m Samantha Wunderle, an 18-year-old cybersecurity student passionate about networking, system defense,
+    and digital forensics. I enjoy solving technical problems, working under pressure, and improving systems.
+  </p>
+
+  <p>
+    Outside of tech, I enjoy painting, being outdoors, and I previously played ice hockey which taught me discipline,
+    teamwork, and resilience.
+  </p>
+
+  <p>
+    I am outgoing, easy to communicate with, and I naturally take initiative when problems arise.
+  </p>
+</section>
+
+<!-- RESUME -->
+<section id="resume" class="tab">
+  <h2>Resume</h2>
+
+  <h3>Education</h3>
+  <p>Francis Howell High School — Graduated May 2025</p>
+  <p>UAT — B.S. Network Security (Current)</p>
+  <p>Lindenwood University — B.S. Cybersecurity (Starting Fall 2026)</p>
+
+  <h3>Work Experience</h3>
+  <p><b>PhasedLogix IT Services (2025–2026)</b></p>
+  <p>Managed IT systems, Active Directory, Microsoft 365, Google Workspace, VPNs, and ticketing systems (Syncro).</p>
+
+  <p><b>Delmar Gardens (2023–2024)</b></p>
+  <p>Customer support, teamwork, communication, and fast-paced service environment.</p>
+
+  <h3>Career Goal</h3>
+  <p>Incident Response • Digital Forensics • Security Architecture</p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="tab">
+  <h2>Skills</h2>
+
+  <h3>Technical Skills</h3>
+  <ul>
+    <li>Active Directory Administration</li>
+    <li>Microsoft 365 / Google Workspace</li>
+    <li>Networking (Routers, VLANs, IP Configurations)</li>
+    <li>Ticketing Systems (Syncro)</li>
+    <li>Cisco Packet Tracer</li>
+    <li>System Troubleshooting</li>
+  </ul>
+
+  <h3>Soft Skills</h3>
+  <ul>
+    <li>Communication & Storytelling</li>
+    <li>Teamwork & Leadership</li>
+    <li>Problem-Solving & Critical Thinking</li>
+    <li>Adaptability</li>
+    <li>Time Management</li>
+    <li>Emotional Intelligence</li>
+    <li>Work Ethic & Initiative</li>
+  </ul>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="tab">
+  <h2>Projects</h2>
+
+  <div class="card">
+    <h3>Cell Tower Networking Simulation</h3>
+    <p>Built a simulated cellular network using routers, servers, and smartphones in Cisco Packet Tracer.</p>
+  </div>
+
+  <div class="card">
+    <h3>VLAN Segmentation Project</h3>
+    <p>Configured VLANs, trunk ports, and router subinterfaces to separate and secure business networks.</p>
+  </div>
+
+  <div class="card">
+    <h3>IT Support Lab Work</h3>
+    <p>Hands-on troubleshooting with Active Directory, VPNs, and enterprise IT systems.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="tab">
+  <h2>Contact</h2>
+  <p>Email: your.email@example.com</p>
+</section>
+
+<!-- IMAGES (BOTTOM SECTION LIKE YOU WANTED) -->
+<section class="gallery">
+  <h2>Portfolio Visuals</h2>
+
+  <div class="gallery-grid">
+    <img src="images/me-photo.jpg" alt="Me 1">
+    <img src="images/me-photo2.jpg" alt="Me 2">
+    <img src="images/packet1.png" alt="Project 1">
+    <img src="images/packet2.png" alt="Project 2">
+  </div>
+</section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
