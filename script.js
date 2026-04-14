@@ -7,7 +7,7 @@ function showTab(id) {
 }
 
 /* typing animation */
-const text = "Hi, I’m Samantha Wunderle";
+const text = "Hi, I'm Samantha Wunderle";
 let i = 0;
 
 function type() {
