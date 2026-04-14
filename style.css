@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0a0a0a;
+  color: white;
+}
+
+/* BACKGROUND ANIMATION */
+.bg-animation {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, #3b0a0a, #000);
+  animation: pulse 6s infinite alternate;
+  z-index: -1;
+}
+
+@keyframes pulse {
+  0% { filter: brightness(1); }
+  100% { filter: brightness(1.3); }
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: rgba(0,0,0,0.6);
+  position: sticky;
+  top: 0;
+}
+
+nav button {
+  background: transparent;
+  border: none;
+  color: white;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+nav button:hover {
+  color: #c14444;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  color: #ffdddd;
+}
+
+/* TABS */
+.tab {
+  display: none;
+  padding: 40px;
+}
+
+.tab.active {
+  display: block;
+}
+
+/* CARDS */
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  margin: 10px 0;
+  border-left: 3px solid #c14444;
+}
+
+/* GALLERY */
+.gallery {
+  padding: 40px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* RESUME BUTTON */
+.resume-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #c14444;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
