@@ -1,28 +1,20 @@
-// ===== TAB SYSTEM (FIXED + ACTIVE STATE) =====
-function showTab(tabId) {
+function showTab(id) {
   document.querySelectorAll(".tab").forEach(tab => {
     tab.classList.remove("active");
   });
 
-  document.getElementById(tabId).classList.add("active");
-
-  // active nav highlight
-  document.querySelectorAll("nav button").forEach(btn => {
-    btn.classList.remove("active");
-  });
-
-  event.target.classList.add("active");
+  document.getElementById(id).classList.add("active");
 }
 
-// ===== TYPING EFFECT (CINEMATIC) =====
-const text = "Hi, I'm Samantha Wunderle";
+/* typing animation */
+const text = "Hi, I’m Samantha Wunderle";
 let i = 0;
 
 function type() {
   if (i < text.length) {
     document.getElementById("typing").innerHTML += text.charAt(i);
     i++;
-    setTimeout(type, 90);
+    setTimeout(type, 80);
   }
 }
 
