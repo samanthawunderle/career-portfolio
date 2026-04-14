@@ -2,19 +2,36 @@ body {
   margin: 0;
   font-family: Arial;
   color: white;
-  background: #120008;
+  background: #0b0006;
+  overflow-x: hidden;
 }
 
-/* animated background */
+/* animated gradient background */
 .bg {
   position: fixed;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle, #3b001a, #000);
-  z-index: -1;
+  background: radial-gradient(circle at top, #3b001a, #000);
+  z-index: -3;
 }
 
-/* header */
+/* NODE NETWORK */
+.nodes {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(#ff2b6a33 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: moveNodes 10s linear infinite;
+  z-index: -2;
+}
+
+@keyframes moveNodes {
+  from { transform: translateY(0px); }
+  to { transform: translateY(40px); }
+}
+
+/* HEADER */
 header {
   display: flex;
   justify-content: space-between;
@@ -29,16 +46,19 @@ nav button {
   background: transparent;
   color: white;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 nav button:hover {
   background: #ff2b6a;
+  transform: scale(1.05);
 }
 
-/* tabs */
+/* TABS */
 .tab {
   display: none;
-  padding: 40px;
+  padding: 60px;
+  min-height: 80vh;
 }
 
 .tab.active {
@@ -50,17 +70,22 @@ nav button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80vh;
-  padding: 40px;
+  height: 85vh;
 }
 
-/* typing text */
+/* typing */
 #typing {
-  font-size: 40px;
+  font-size: 45px;
   color: #ff2b6a;
 }
 
-/* images FIXED */
+/* SUBTEXT */
+.subtext {
+  max-width: 500px;
+  opacity: 0.8;
+}
+
+/* HERO IMAGES */
 .hero-images {
   position: relative;
   width: 400px;
@@ -70,38 +95,39 @@ nav button:hover {
 .hero-images img {
   position: absolute;
   width: 200px;
-  border-radius: 20px;
+  border-radius: 15px;
   box-shadow: 0 0 25px #ff2b6a;
 }
 
-.img1 {
-  top: 40px;
-  right: 60px;
-  transform: rotate(-5deg);
-}
+.img1 { top: 40px; right: 60px; transform: rotate(-6deg); }
+.img2 { top: 180px; right: 140px; transform: rotate(8deg); }
 
-.img2 {
-  top: 180px;
-  right: 140px;
-  transform: rotate(8deg);
-}
-
-/* cards */
+/* HOLOGRAPHIC CARD */
 .card {
   background: rgba(255,255,255,0.05);
-  padding: 20px;
+  padding: 25px;
   margin: 20px 0;
   border-left: 3px solid #ff2b6a;
+  transition: 0.3s;
 }
 
-/* grid */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #ff2b6a55;
+}
+
+.holo {
+  backdrop-filter: blur(10px);
+}
+
+/* GRID */
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
 
-/* button */
+/* BUTTON */
 .btn {
   display: inline-block;
   margin-top: 20px;
