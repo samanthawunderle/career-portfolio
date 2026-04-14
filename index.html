@@ -1,188 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Samantha Wunderle | Cybersecurity Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Samantha Wunderle | Cybersecurity Portfolio</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NODE BACKGROUND -->
 <canvas id="nodeCanvas"></canvas>
 
-<!-- TOP NAV -->
 <header>
   <div class="logo">Samantha<span>Wunderle</span></div>
 
   <nav>
-    <button class="tab active" onclick="showTab('home')">Home</button>
-    <button class="tab" onclick="showTab('about')">About</button>
-    <button class="tab" onclick="showTab('resume')">Resume</button>
-    <button class="tab" onclick="showTab('skills')">Skills</button>
-    <button class="tab" onclick="showTab('projects')">Projects</button>
-    <button class="tab" onclick="showTab('contact')">Contact</button>
+    <button onclick="showTab('home')">Home</button>
+    <button onclick="showTab('about')">About</button>
+    <button onclick="showTab('resume')">Resume</button>
+    <button onclick="showTab('skills')">Skills</button>
+    <button onclick="showTab('projects')">Projects</button>
+    <button onclick="showTab('contact')">Contact</button>
   </nav>
 </header>
 
 <!-- HOME -->
-<section id="home" class="tab-content active">
-
+<section id="home" class="tab active">
   <div class="hero">
     <h1 class="typing"></h1>
-    <p class="subtitle">
-      Cybersecurity • Network Defense • Digital Forensics • IT Systems
+    <p class="sub">
+      Cybersecurity • Incident Response • Network Defense • Digital Forensics
     </p>
-
-    <a class="resume-btn" href="resume.pdf" download>Download Resume</a>
   </div>
 
-  <div class="hero-grid">
-    <div class="glass-card">
-      <h2>Professional Identity</h2>
-      <p>Cybersecurity student specializing in network security, incident response, and IT systems administration.</p>
-    </div>
-
-    <div class="glass-card">
-      <h2>Strengths</h2>
-      <p>Initiative, communication, problem-solving under pressure, and fast technical adaptation.</p>
-    </div>
+  <div class="image-row">
+    <img src="images/me-photo.jpg">
+    <img src="images/me-photo2.jpg">
   </div>
-
-  <div class="image-showcase">
-    <img src="images/me-photo.jpg" class="blend-img">
-    <img src="images/me-photo2.jpg" class="blend-img">
-  </div>
-
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="tab-content">
+<section id="about" class="tab">
 
-  <h2 class="section-title">About Me</h2>
+  <h2>About Me</h2>
 
-  <div class="text-block">
-    <p>
-      I’m Samantha Wunderle, an 18-year-old cybersecurity student passionate about defending networks,
-      analyzing systems, and understanding how digital infrastructure operates at scale.
-    </p>
+  <p class="bio">
+    I’m Samantha Wunderle, an 18-year-old cybersecurity student focused on network defense,
+    incident response, and understanding how systems behave under pressure.
+    I thrive in fast-paced environments where attention to detail matters.
+  </p>
 
-    <p>
-      I thrive in fast-paced environments where problem-solving is required under pressure.
-      I am highly communicative, detail-oriented, and naturally take initiative when issues arise.
-    </p>
-
-    <p>
-      Outside of IT, I enjoy painting, ice hockey, and exploring how creative thinking applies to technical problem solving.
-    </p>
-  </div>
-
-  <div class="glass-grid">
-    <div class="glass-card">Leadership Mindset</div>
-    <div class="glass-card">Fast Learner</div>
-    <div class="glass-card">Problem Solver</div>
-    <div class="glass-card">Team-Oriented</div>
+  <div class="bubble-grid">
+    <div>Critical Thinker</div>
+    <div>Calm Under Pressure</div>
+    <div>Fast Learner</div>
+    <div>Team Player</div>
+    <div>Problem Solver</div>
+    <div>Detail-Oriented</div>
+    <div>Leadership Mindset</div>
+    <div>Adaptable</div>
   </div>
 
 </section>
 
 <!-- RESUME -->
-<section id="resume" class="tab-content">
+<section id="resume" class="tab">
+  <h2>Resume Timeline</h2>
 
-  <h2 class="section-title">Resume</h2>
+  <div class="timeline">
+    <div>
+      <h3>Education</h3>
+      <p>Francis Howell High School (2025)</p>
+      <p>UAT – Network Security (Current)</p>
+      <p>Lindenwood – Cybersecurity (Upcoming)</p>
+    </div>
 
-  <div class="resume-block">
-    <h3>Education</h3>
-    <p>Francis Howell High School — Graduated May 2025</p>
-    <p>University of Advancing Technology — B.S. Network Security (Current)</p>
-    <p>Lindenwood University — B.S. Cybersecurity (Starting Fall)</p>
+    <div>
+      <h3>PhasedLogix IT</h3>
+      <p>Active Directory • Microsoft 365 • Google Workspace</p>
+      <p>Ticketing (Syncro) • Endpoint Support • Networking</p>
+    </div>
+
+    <div>
+      <h3>Delmar Gardens</h3>
+      <p>Customer support • Communication • Fast-paced operations</p>
+    </div>
   </div>
-
-  <div class="resume-block">
-    <h3>Work Experience</h3>
-    <p><b>PhasedLogix IT Services (2025–2026)</b></p>
-    <ul>
-      <li>Active Directory user management</li>
-      <li>Microsoft 365 + Google Workspace administration</li>
-      <li>Ticket-based troubleshooting (Syncro)</li>
-      <li>Network + endpoint support under CMMC environments</li>
-    </ul>
-
-    <p><b>Delmar Gardens (2023–2024)</b></p>
-    <ul>
-      <li>Customer service & communication</li>
-      <li>Fast-paced operational support</li>
-      <li>Team collaboration in healthcare environment</li>
-    </ul>
-  </div>
-
 </section>
 
 <!-- SKILLS -->
-<section id="skills" class="tab-content">
+<section id="skills" class="tab">
+  <h2>Skills</h2>
 
-  <h2 class="section-title">Skills & Tools</h2>
-
-  <div class="skill-grid">
-
-    <div class="glass-card">
-      <h3>Technical Skills</h3>
-      <p>Networking, Active Directory, Windows/Linux basics, endpoint troubleshooting</p>
-    </div>
-
-    <div class="glass-card">
-      <h3>Cybersecurity</h3>
-      <p>Incident response concepts, system monitoring, access control, security fundamentals</p>
-    </div>
-
-    <div class="glass-card">
-      <h3>Tools</h3>
-      <p>Cisco Packet Tracer, Syncro Ticketing, Microsoft Admin Center</p>
-    </div>
-
-    <div class="glass-card">
-      <h3>Soft Skills</h3>
-      <p>Communication, leadership, adaptability, emotional intelligence, teamwork</p>
-    </div>
-
+  <div class="skills">
+    <div>Networking & Routing</div>
+    <div>Active Directory</div>
+    <div>Microsoft / Google Admin</div>
+    <div>Cybersecurity Fundamentals</div>
+    <div>IT Troubleshooting</div>
+    <div>Syncro Ticketing System</div>
   </div>
-
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" class="tab-content">
+<section id="projects" class="tab">
+  <h2>Projects</h2>
 
-  <h2 class="section-title">Projects</h2>
-
-  <div class="project-grid">
-
-    <div class="glass-card">
+  <div class="projects">
+    <div class="card">
       <img src="images/packet1.png">
-      <h3>Cellular Network Simulation</h3>
-      <p>Configured router interfaces, cellular towers, and simulated mobile connectivity using Packet Tracer.</p>
+      <p>Cellular Network Simulation (Packet Tracer)</p>
     </div>
 
-    <div class="glass-card">
+    <div class="card">
       <img src="images/packet2.png">
-      <h3>VLAN Segmentation Lab</h3>
-      <p>Built segmented VLAN architecture with trunking and inter-VLAN routing for enterprise-style networks.</p>
+      <p>VLAN Segmentation & Routing Lab</p>
     </div>
-
   </div>
-
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="tab-content">
+<section id="contact" class="tab">
+  <h2>Mission Complete</h2>
 
-  <h2 class="section-title">Contact</h2>
-
-  <div class="contact-card">
+  <div class="contact-box">
     <p>Email: your@email.com</p>
-    <p>LinkedIn: (add later)</p>
-  </div>
 
+    <a href="resume.pdf" download class="btn">Download Resume</a>
+  </div>
 </section>
 
 <script src="script.js"></script>
